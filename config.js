@@ -1,12 +1,12 @@
 module.exports = {
   pathPrefix: '',
-  siteUrl: 'https://alifmunim.com',
+  siteUrl: 'http://alifmunim.com/',
   siteTitle: 'Alif Munim',
   siteDescription: 'Logbook of a software developer',
   author: 'Alif Munim',
   postsForArchivePage: 3,
   defaultLanguage: 'en',
-  disqusScript: process.env.DISQUS_SCRIPT || 'https://alifmunim.disqus.com/embed.js',
+  disqusScript: process.env.DISQUS_SCRIPT || '//alifmunim-com.disqus.com/embed.js',
   pages: {
     home: '/',
     blog: 'blog',
