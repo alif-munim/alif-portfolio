@@ -7,7 +7,7 @@ import Config from '../../../config';
 
 class Comments extends React.Component {
   componentDidMount() {
-    const { pageCanonicalUrl, pageId } = this.props;
+    const { pageCanonicalUrl, pageId, pageTitle, pageCategory } = this.props;
 
     if (window.DISQUS) {
       window.DISQUS.reset({
@@ -15,12 +15,16 @@ class Comments extends React.Component {
         config() {
           this.page.url = pageCanonicalUrl;
           this.page.identifier = pageId;
+          this.page.title = pageTitle;
+          this.page.category = pageCategory;
         },
       });
     } else {
       window.disqus_config = () => {
         this.page.url = pageCanonicalUrl;
         this.page.identifier = pageId;
+        this.page.title = pageTitle;
+        this.page.category = pageCategory;
       };
       (function () {
         // eslint-disable-next-line no-undef
@@ -45,6 +49,8 @@ class Comments extends React.Component {
 Comments.propTypes = {
   pageCanonicalUrl: PropTypes.string.isRequired,
   pageId: PropTypes.string.isRequired,
+  pageTitle: PropTypes.string.isRequired,
+  pageCategory: PropTypes.string.isRequired,
 };
 
 export default Comments;

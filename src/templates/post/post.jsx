@@ -16,7 +16,7 @@ import style from './post.module.less';
 const Post = ({ data }) => {
   const { html, frontmatter } = data.markdownRemark;
   const {
-    title, cover: { childImageSharp: { fluid } }, excerpt, path,
+    title, id, category, cover: { childImageSharp: { fluid } }, excerpt, path,
   } = frontmatter;
 
   const canonicalUrl = Utils.resolvePageUrl(
@@ -41,7 +41,7 @@ const Post = ({ data }) => {
               <Img className={style.bannerImg} fluid={fluid} title={excerpt} alt={title} />
             </div>
             <article className={style.blogArticle} dangerouslySetInnerHTML={{ __html: html }} />
-            <Comment pageCanonicalUrl={canonicalUrl} pageId={title} />
+            <Comment pageCanonicalUrl={canonicalUrl} pageId={id} pageTitle={title} pageCategory={category}/>
           </div>
         </SidebarWrapper>
       </Layout>

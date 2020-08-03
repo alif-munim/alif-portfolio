@@ -6,7 +6,7 @@ module.exports = {
   author: 'Alif Munim',
   postsForArchivePage: 3,
   defaultLanguage: 'en',
-  disqusScript: process.env.DISQUS_SCRIPT || '//alifmunim-com.disqus.com/embed.js',
+  disqusScript: process.env.DISQUS_SCRIPT || 'http://alifmunim-com.disqus.com/embed.js',
   pages: {
     home: '/',
     blog: 'blog',
@@ -16,7 +16,7 @@ module.exports = {
   },
   social: {
     github: 'https://github.com/alif-munim',
-    linkedin: 'https://www.linkedin.com/in/alif-munim-a6817a198/'
+    linkedin: 'https://www.linkedin.com/in/alif-munim-a6817a198/',
   },
   contactFormUrl: process.env.CONTACT_FORM_ENDPOINT || 'https://getform.io/f/d02b3ac1-7656-4441-b463-219281a622eb',
   googleAnalyticTrackingId: process.env.GA_TRACKING_ID || '',

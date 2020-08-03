@@ -1,5 +1,7 @@
 ---
 title: IBM Intern Hackathon 2020
+id: ibm-intern-hackathon-2020
+category: projects
 tags: [reactjs, javascript, typescript, html, css ]
 date: 2020-07-24T05:25:44.226Z
 path: blog/ibm-intern-hackathon

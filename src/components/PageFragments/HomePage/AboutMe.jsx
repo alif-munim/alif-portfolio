@@ -2,7 +2,7 @@ import React from 'react';
 import { Row, Col } from 'antd';
 import AboutTile from '../../AbouTile';
 import { stripTags, domHtml } from '../../../utils/stripTags';
-import Skills from './SkillProgress';
+// import Skills from './SkillProgress';
 
 import SEO from '../../Seo';
 
@@ -19,19 +19,19 @@ const pageText = {
 const AboutMe = () => {
   const description = `${pageText.paraOne} ${stripTags(pageText.paraTwo)}`;
   const skills1 = {
-    reactjs: "40",
-    nodejs: "30",
-    mongodb: "30"
-  }
+    reactjs: '40',
+    nodejs: '30',
+    mongodb: '30',
+  };
   const skills2 = {
-    python: "50",
-    shell: "50"
-  }
+    python: '50',
+    shell: '50',
+  };
   const skills3 = {
-    nodejs: "20",
-    mongodb: "20",
-    docker: "60"
-  }
+    nodejs: '20',
+    mongodb: '20',
+    docker: '60',
+  };
   return (
     <>
       <div>

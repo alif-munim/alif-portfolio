@@ -5,12 +5,12 @@ import Skills from '../PageFragments/HomePage/SkillProgress';
 const AboutTile = (props) => {
   const {
     img, textH4, textH3, alt, height, width, githubSrc,
-    javascript, reactjs, gatsby, nodejs, python, mysql, mongodb, wordpress, shell, docker
+    javascript, reactjs, gatsby, nodejs, python, mysql, mongodb, wordpress, shell, docker,
   } = props;
 
 
   return (
-    <a href={githubSrc} >
+    <a href={githubSrc}>
       <div className={style.aboutTile}>
         <div className={style.aboutBlock}>
           <img
@@ -24,16 +24,18 @@ const AboutTile = (props) => {
           <h3>{textH3 || '' }</h3>
           <p>{ textH4 || ''}</p>
         </div>
-          <Skills javascript={javascript} 
-            reactjs={reactjs} 
-            gatsby={gatsby} 
-            nodejs={nodejs}
-            python={python}
-            mysql={mysql}
-            mongodb={mongodb}
-            wordpress={wordpress}
-            docker={docker}
-            shell={shell}/>
+        <Skills
+          javascript={javascript}
+          reactjs={reactjs}
+          gatsby={gatsby}
+          nodejs={nodejs}
+          python={python}
+          mysql={mysql}
+          mongodb={mongodb}
+          wordpress={wordpress}
+          docker={docker}
+          shell={shell}
+        />
       </div>
     </a>
   );

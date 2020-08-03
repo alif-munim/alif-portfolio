@@ -51,7 +51,6 @@ export default class Resume extends Component {
             {
               numPages > 1 && <Button type="primary" onClick={pageToggle}>{pageNumber === 1 ? 'Next Page' : 'Previous Page'}</Button>
             }
-            
           </Col>
         </Row>
       </div>
